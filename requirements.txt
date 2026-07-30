@@ -1,0 +1,10 @@
+gradio==4.44.1
+pandas==2.3.3
+numpy==2.0.2
+python-dotenv==1.2.1
+langchain-community==0.3.31
+langchain-openai==0.3.35
+langchain-chroma==0.2.6
+langchain-text-splitters==0.3.11
+chromadb==1.5.9
+openai==2.48.0
