@@ -20,10 +20,10 @@ books["large_thumbnail"] = np.where(
     books["large_thumbnail"],
 )
 
-raw_documents = TextLoader("tagged_description.txt").load()
-text_splitter = CharacterTextSplitter(separator="\n", chunk_size=1, chunk_overlap=0)
-documents = text_splitter.split_documents(raw_documents)
-db_books = Chroma.from_documents(documents, OpenAIEmbeddings())
+db_books = Chroma(
+    persist_directory="chroma_db",
+    embedding_function=OpenAIEmbeddings()
+)
 
 def retrieve_semantic_recommendations(
         query: str,
