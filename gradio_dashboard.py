@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import os
 from dotenv import load_dotenv
 
 from langchain_community.document_loaders import TextLoader
@@ -104,4 +105,4 @@ with gr.Blocks(theme=gr.Theme.from_hub("Furinasdog/Newspaper")) as dashboard:
 
 
 if __name__ == "__main__":
-    dashboard.launch(share=True)
+    dashboard.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
