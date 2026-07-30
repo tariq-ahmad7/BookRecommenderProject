@@ -9,3 +9,4 @@ langchain-text-splitters==0.3.11
 chromadb==1.5.9
 openai==2.48.0
 audioop-lts
+huggingface_hub==0.25.2
