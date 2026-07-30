@@ -1,6 +1,6 @@
 gradio==4.44.1
-pandas==2.3.3
-numpy==2.0.2
+pandas
+numpy
 python-dotenv==1.2.1
 langchain-community==0.3.31
 langchain-openai==0.3.35
