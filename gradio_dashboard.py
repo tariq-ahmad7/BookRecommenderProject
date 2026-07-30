@@ -84,7 +84,7 @@ categories = ["All"] + sorted(books["simple_categories"].unique())
 tones = ["All"] + ["Happy", "Surprising", "Angry", "Suspenseful", "Sad"]
 
 with gr.Blocks(theme=gr.Theme.from_hub("Furinasdog/Newspaper")) as dashboard:
-    gr.Markdown("# Semantic Book Recommender")
+    gr.Markdown("# Find Your Next Read")
 
 
 
