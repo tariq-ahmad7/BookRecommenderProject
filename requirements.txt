@@ -16,4 +16,3 @@ pydantic==2.8.2
 pydantic_core==2.20.1
 fastapi==0.109.2
 starlette==0.36.3
-audioop-lts
